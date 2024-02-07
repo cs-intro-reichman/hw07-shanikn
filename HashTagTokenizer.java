@@ -50,7 +50,8 @@ public class HashTagTokenizer {
 			if(existInDictionary(lowCaseHash.substring(0, i), dictionary))
 			{
 				System.out.println(lowCaseHash.substring(0,i));
-				breakHashTag(lowCaseHash.substring(i,N), dictionary);
+				lowCaseHash=lowCaseHash.substring(i, N);
+				breakHashTag(lowCaseHash, dictionary);
 			}
         }
     }
